@@ -1,0 +1,1 @@
+export { countFiles } from './fileCount.js'
