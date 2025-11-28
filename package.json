@@ -32,7 +32,8 @@
   "files": [
     "dist",
     "README.md",
-    "template-*"
+    "template-stdio",
+    "template-streamable"
   ],
   "keywords": [
     "MCP Server cli",

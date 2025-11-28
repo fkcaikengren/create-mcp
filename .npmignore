@@ -1,0 +1,5 @@
+template-*/dist
+template-*/node_modules
+template-*/.env
+template-*/.local*
+template-*/*-lock.yaml
