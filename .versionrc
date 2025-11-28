@@ -1,0 +1,17 @@
+{
+  "header": "# 更新日志 \n\n 所有版本的更新记录如下。",
+  "types": [
+    {"type": "feat", "section": "✨ 新功能"},
+    {"type": "fix", "section": "🐛 Bug 修复"},
+    {"type": "chore", "hidden": true},
+    {"type": "docs", "hidden": true},
+    {"type": "style", "hidden": true},
+    {"type": "refactor", "hidden": true},
+    {"type": "perf", "section": "🚀 性能优化"},
+    {"type": "test", "hidden": true}
+  ],
+  "skip": {
+    "commit": false,
+    "tag": false
+  }
+}

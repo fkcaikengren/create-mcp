@@ -1,8 +1,11 @@
 {
-  "name": "create-mcp",
+  "name": "@caikengren-cli/create-mcp",
   "version": "0.0.3",
   "description": "创建MCP服务器脚手架的工具",
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
