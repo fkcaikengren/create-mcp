@@ -1,6 +1,6 @@
 {
   "name": "create-mcp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "创建MCP服务器脚手架的工具",
   "private": true,
   "type": "module",
