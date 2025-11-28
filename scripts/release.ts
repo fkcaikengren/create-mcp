@@ -28,7 +28,7 @@ async function main(){
     
     // 推送标签和代码到远程
     console.log('🔄 推送标签和代码到远程...')
-    run('git push --follow-tags origin main')
+    run('git push --follow-tags origin release')
     
     console.log('✅ 发布完成！')
 
