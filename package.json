@@ -2,8 +2,9 @@
   "name": "@caikengren-cli/create-mcp",
   "version": "0.0.4",
   "description": "创建MCP服务器脚手架的工具",
-  "private": true,
+  "private": false,
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
   "type": "module",
