@@ -1,6 +1,9 @@
 import {Command} from "commander" 
 import { MyServer } from "./server.js";
 
+/* 
+  cli程序
+*/
 
 const program = new Command()
   .name("my-mcp")

@@ -6,9 +6,6 @@
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
-  "bin": {
-    "my-mcp": "dist/main.js"
-  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -18,8 +15,8 @@
   },
   "packageManager": "pnpm@10.6.2",
   "scripts": {
-    "dev": "tsc -w -p tsconfig.json",
-    "inspect": "npx -y mcp-inspector node dist/main.js",
+    "dev": "tsx src/main.ts -w",
+    "inspect": "mcp-inspector",
     "build": "tsc -p tsconfig.json"
   },
   "files": [
@@ -35,7 +32,6 @@
   "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.23.0",
-    "commander": "^14.0.2",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "zod": "^4.1.13"

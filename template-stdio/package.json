@@ -19,7 +19,7 @@
   "packageManager": "pnpm@10.6.2",
   "scripts": {
     "dev": "tsc -w -p tsconfig.json",
-    "inspect": "npx -y mcp-inspector node dist/main.js run-server",
+    "inspect": "mcp-inspector node dist/main.js run-server",
     "build": "tsc -p tsconfig.json"
   },
   "files": [

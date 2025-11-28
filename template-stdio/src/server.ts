@@ -10,7 +10,7 @@ export class MyServer {
   constructor() {
     this.mcpServer = new McpServer({
       name: "mcp-file-counter",
-      version: "0.1.0",
+      version: "0.0.1",
     });
 
     // Error handling
