@@ -15,7 +15,7 @@
     "start": "tsx src/index.ts",
     "build": "tsdown",
     "typecheck": "tsc -p tsconfig.json",
-    "release": "standard-version"
+    "release": "tsx scripts/release.ts"
   },
   "repository": {
     "type": "git",

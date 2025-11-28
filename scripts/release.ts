@@ -1,0 +1,45 @@
+import { execSync } from 'node:child_process'
+
+function run(cmd: string) {
+  execSync(cmd, { stdio: 'inherit' })
+}
+
+async function main(){
+
+  try {
+    // 首先进行构建测试，确保代码可以正常构建
+    console.log('🔄 构建测试...')
+    run('npm run build')
+    
+    // 只有在构建成功后才使用 standard-version 管理版本发布
+    console.log('🔄 使用 standard-version 管理版本发布...')
+    run('npx standard-version')
+    
+    // 发布到 npm 仓库
+    console.log('🔄 发布到 npm 仓库...')
+    run('npm publish')
+    
+    // 推送标签和代码到远程
+    console.log('🔄 推送标签和代码到远程...')
+    run('git push --follow-tags origin main')
+    
+    console.log('✅ 发布完成！')
+
+
+    // 合并回到主分支，删除 release 分支
+    run('git checkout main')
+    run('git merge release')
+    run('git push')
+    run('git branch -d release')
+    run('git push origin --delete release')
+    console.log('✅ 合并并删除 release 分支完成！')
+
+  } catch (e: any) {
+    console.error('❌ 发布失败:', e.message)
+    const code = typeof e?.status === 'number' ? e.status : 1
+    process.exit(code)
+  }
+
+}
+
+main();
