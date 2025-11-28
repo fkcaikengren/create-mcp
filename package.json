@@ -1,6 +1,6 @@
 {
   "name": "@caikengren-cli/create-mcp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "创建MCP服务器脚手架的工具",
   "private": false,
   "publishConfig": {
